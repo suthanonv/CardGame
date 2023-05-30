@@ -9,6 +9,9 @@ public class CardDrag : MonoBehaviour , IBeginDragHandler, IEndDragHandler,IDrag
 
     GameObject MergedCard;
 
+    public static event HandleNumberCalculation OnMerge;
+
+    public delegate void HandleNumberCalculation(int Num1, int Num2);
 
     public void OnBeginDrag(PointerEventData eventData)
     {
