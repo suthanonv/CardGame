@@ -229,6 +229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 1469035797}
+  CardID: 7
 --- !u!1 &126157776
 GameObject:
   m_ObjectHideFlags: 0
@@ -335,6 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 324277850}
+  CardID: 10
 --- !u!1 &219626146
 GameObject:
   m_ObjectHideFlags: 0
@@ -1226,6 +1228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 2126286261}
+  CardID: 9
 --- !u!1 &563130414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,6 +1402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 2123450179}
+  CardID: 5
 --- !u!1 &716897482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1640,6 +1644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 1683656558}
+  CardID: 6
 --- !u!1 &795112678
 GameObject:
   m_ObjectHideFlags: 0
@@ -2408,7 +2413,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1729962916}
         m_TargetAssemblyTypeName: Calculation, Assembly-CSharp
-        m_MethodName: Mergedivide
+        m_MethodName: MergeDivide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2562,6 +2567,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 476660687}
+  CardID: 8
 --- !u!1 &1314168326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2758,6 +2764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 716897484}
+  CardID: 2
 --- !u!1 &1459305988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,6 +2871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 439034126}
+  CardID: 3
 --- !u!1 &1469035795
 GameObject:
   m_ObjectHideFlags: 0
@@ -3105,6 +3113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 807812408}
+  CardID: 4
 --- !u!1 &1545618719
 GameObject:
   m_ObjectHideFlags: 0
@@ -4024,7 +4033,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   num1: 0
   num2: 0
-  MergedCard: {fileID: 0}
+  card1: {fileID: 0}
+  card2: {fileID: 0}
+  CalculationMenu: {fileID: 1056425195}
 --- !u!1 &1750511773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4265,6 +4276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Number: 0
   text: {fileID: 1674475973}
+  CardID: 1
 --- !u!1 &2053659218
 GameObject:
   m_ObjectHideFlags: 0
