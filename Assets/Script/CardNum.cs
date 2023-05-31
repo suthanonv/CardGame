@@ -12,6 +12,9 @@ public class CardNum : MonoBehaviour
     [SerializeField] private TextMeshProUGUI text;
 
     [SerializeField] public int CardID;
+
+    [SerializeField] public List<int> ReturnNum = new List<int>();
+
     private void OnEnable()
     {
         RandomNumber();
@@ -29,4 +32,17 @@ public class CardNum : MonoBehaviour
         Number = NumToChangeTo;
         text.SetText(Number.ToString());
     }
+
+    public void SetSaveReturnID(int Num)
+    {
+        ReturnNum.Add(Num);
+    }
+
+    public void Return()
+    {
+        ReturnScript.instance.LoadNumber(ReturnNum[ReturnNum.Count -1]);
+        ReturnNum.Remove(ReturnNum[ReturnNum.Count - 1]);
+    }
+
+    
 }

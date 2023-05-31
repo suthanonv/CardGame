@@ -12,6 +12,7 @@ public class Calculation : MonoBehaviour
     [SerializeField] public GameObject card2;
     [SerializeField] private GameObject CalculationMenu;
 
+
     private void OnEnable()
     {
         CardDrag.OnMerge += StoreNumber;
@@ -31,6 +32,9 @@ public class Calculation : MonoBehaviour
             card1 = Card1;
             card2 = Card2;
             CalculationMenu.SetActive(true);
+
+            ReturnScript.instance.SaveOrginNum(Card1, Card2);
+
         }
         else
         {
