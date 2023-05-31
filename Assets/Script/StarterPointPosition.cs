@@ -10,6 +10,8 @@ public class StarterPointPosition : MonoBehaviour
     [SerializeField] List<Transform> CardPointPosition;
 
     [SerializeField] float FixRaduis;
+
+    [SerializeField] public List<GameObject> CardDraged = new List<GameObject>();
     private void Awake()
     {
         instance = this;
@@ -34,6 +36,22 @@ public class StarterPointPosition : MonoBehaviour
             return currentTransform;
         }
         return null;
+    }
+
+    public int GetArrayNum(Transform card)
+    {
+        int count = 0;
+        foreach (Transform i in CardPointPosition)
+        {
+            if (i.transform.position == card.position)
+            {
+                Debug.Log(count.ToString());
+                return count;
+            }
+            count++;
+        }
+
+        return 100;
     }
 
 

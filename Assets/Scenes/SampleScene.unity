@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 25276497}
   - component: {fileID: 25276498}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,6 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 1469035797}
 --- !u!1 &126157776
 GameObject:
@@ -242,7 +243,7 @@ GameObject:
   - component: {fileID: 126157782}
   - component: {fileID: 126157783}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -332,6 +333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 324277850}
 --- !u!1 &219626146
 GameObject:
@@ -1132,7 +1134,7 @@ GameObject:
   - component: {fileID: 529716144}
   - component: {fileID: 529716145}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1222,6 +1224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 2126286261}
 --- !u!1 &563130414
 GameObject:
@@ -1304,7 +1307,7 @@ GameObject:
   - component: {fileID: 666055133}
   - component: {fileID: 666055134}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1394,6 +1397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 2123450179}
 --- !u!1 &716897482
 GameObject:
@@ -1544,7 +1548,7 @@ GameObject:
   - component: {fileID: 783657006}
   - component: {fileID: 783657007}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1634,6 +1638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 1683656558}
 --- !u!1 &795112678
 GameObject:
@@ -2046,6 +2051,17 @@ MonoBehaviour:
   - {fileID: 1589922363}
   - {fileID: 795112679}
   FixRaduis: 30
+  CardDraged:
+  - {fileID: 1796183780}
+  - {fileID: 1426860059}
+  - {fileID: 1459305988}
+  - {fileID: 1525997305}
+  - {fileID: 666055127}
+  - {fileID: 783657000}
+  - {fileID: 25276491}
+  - {fileID: 1240893849}
+  - {fileID: 529716138}
+  - {fileID: 126157776}
 --- !u!1 &1026486333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,7 +2208,6 @@ GameObject:
   - component: {fileID: 1056425196}
   - component: {fileID: 1056425199}
   - component: {fileID: 1056425198}
-  - component: {fileID: 1056425197}
   m_Layer: 5
   m_Name: Calculation
   m_TagString: Untagged
@@ -2207,7 +2222,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056425195}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 19.262468, y: 10.775, z: 10.775}
   m_ConstrainProportionsScale: 0
@@ -2216,7 +2231,7 @@ RectTransform:
   - {fileID: 1660801648}
   - {fileID: 1750511774}
   - {fileID: 1205806988}
-  m_Father: {fileID: 1708585906}
+  m_Father: {fileID: 1729962915}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2224,18 +2239,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1056425197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1056425195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03e0b65023b19cf4ea82261eca0f004e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1056425198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2402,7 +2405,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1205806990}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1729962916}
+        m_TargetAssemblyTypeName: Calculation, Assembly-CSharp
+        m_MethodName: Mergedivide
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1205806990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2455,7 +2470,7 @@ GameObject:
   - component: {fileID: 1240893855}
   - component: {fileID: 1240893856}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2545,6 +2560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 476660687}
 --- !u!1 &1314168326
 GameObject:
@@ -2650,7 +2666,7 @@ GameObject:
   - component: {fileID: 1426860065}
   - component: {fileID: 1426860066}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2740,6 +2756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 716897484}
 --- !u!1 &1459305988
 GameObject:
@@ -2755,7 +2772,7 @@ GameObject:
   - component: {fileID: 1459305994}
   - component: {fileID: 1459305995}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2845,6 +2862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 439034126}
 --- !u!1 &1469035795
 GameObject:
@@ -2995,7 +3013,7 @@ GameObject:
   - component: {fileID: 1525997311}
   - component: {fileID: 1525997312}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3085,6 +3103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 807812408}
 --- !u!1 &1545618719
 GameObject:
@@ -3394,7 +3413,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1621192032}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1729962916}
+        m_TargetAssemblyTypeName: Calculation, Assembly-CSharp
+        m_MethodName: MergePlus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1621192032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3516,7 +3547,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1660801650}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1729962916}
+        m_TargetAssemblyTypeName: Calculation, Assembly-CSharp
+        m_MethodName: MergeMinus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1660801650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3920,7 +3963,7 @@ RectTransform:
   m_Children:
   - {fileID: 946261927}
   - {fileID: 401641067}
-  - {fileID: 1056425196}
+  - {fileID: 1729962915}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3929,6 +3972,59 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1729962914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1729962915}
+  - component: {fileID: 1729962916}
+  m_Layer: 5
+  m_Name: CaulculationSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1729962915
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729962914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1056425196}
+  m_Father: {fileID: 1708585906}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1729962916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729962914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e0b65023b19cf4ea82261eca0f004e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num1: 0
+  num2: 0
+  MergedCard: {fileID: 0}
 --- !u!1 &1750511773
 GameObject:
   m_ObjectHideFlags: 0
@@ -4012,7 +4108,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1750511776}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1729962916}
+        m_TargetAssemblyTypeName: Calculation, Assembly-CSharp
+        m_MethodName: MergeMultipy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1750511776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4065,7 +4173,7 @@ GameObject:
   - component: {fileID: 1796183786}
   - component: {fileID: 1796183787}
   m_Layer: 5
-  m_Name: Drag Point
+  m_Name: Drag Point1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4155,6 +4263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf9e202c49fc604d841ef6d43f5b01d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Number: 0
   text: {fileID: 1674475973}
 --- !u!1 &2053659218
 GameObject:

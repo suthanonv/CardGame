@@ -4,23 +4,29 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using TMPro;
+using Unity.Mathematics;
 
 public class CardNum : MonoBehaviour
 {
-    private int Number;
+    public float Number;
     [SerializeField] private TextMeshProUGUI text;
+
+    [SerializeField] public int CardID;
     private void OnEnable()
     {
         RandomNumber();
     }
 
-    private void Update()
-    {
-        text.SetText(Number.ToString());
-    }
-
     void RandomNumber()
     {
         Number = UnityEngine.Random.Range(1, 10);
+        math.round(Number);
+        text.SetText(Number.ToString());
+    }
+
+    public void ChangeNumber(float NumToChangeTo)
+    {
+        Number = NumToChangeTo;
+        text.SetText(Number.ToString());
     }
 }
