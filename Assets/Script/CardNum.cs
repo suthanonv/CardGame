@@ -24,7 +24,6 @@ public class CardNum : MonoBehaviour
     {
         Number = UnityEngine.Random.Range(1, 10);
         math.round(Number);
-        text.SetText(Number.ToString());
     }
 
     public void ChangeNumber(float NumToChangeTo)
@@ -40,9 +39,25 @@ public class CardNum : MonoBehaviour
 
     public void Return()
     {
-        ReturnScript.instance.LoadNumber(ReturnNum[ReturnNum.Count -1]);
-        ReturnNum.Remove(ReturnNum[ReturnNum.Count - 1]);
+       
+     ReturnScript.instance.LoadNumber(ReturnNum[ReturnNum.Count - 1]);
+     ReturnNum.Remove(ReturnNum[ReturnNum.Count - 1]);
+
+        if(ReturnNum.Count <= 0)
+        {
+            this.GetComponent<CardDrag>().EnableCardReturnButton(false);
+        }
     }
 
-    
-}
+    public void FaceUpCardTrue(bool isFaceUp)
+    {
+        if (isFaceUp)
+        {
+            text.SetText(Number.ToString());
+        }
+        else
+        {
+            text.SetText("");
+        }
+    }
+    }

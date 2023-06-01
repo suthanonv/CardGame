@@ -11,9 +11,18 @@ public class CardDrag : MonoBehaviour , IBeginDragHandler, IEndDragHandler,IDrag
 
     GameObject MergedCard;
 
+    Button buttonScript;
+
     public static event HandleNumberCalculation OnMerge;
 
     public delegate void HandleNumberCalculation(GameObject Card1, GameObject Card2);
+
+    void Start()
+    {
+        buttonScript = this.GetComponent<Button>();
+        ReturnScript.instance.enableCardReturnMode.AddListener(EnableCardReturnButton);
+    }
+
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -34,13 +43,20 @@ public class CardDrag : MonoBehaviour , IBeginDragHandler, IEndDragHandler,IDrag
             this.transform.position = StartPoint.transform.position;
 
         }
-        else
+        else if(!StarterPointPosition.instance.CheckIsPositionEqualToPlayerAttackPoint(check))
         {
             OnMerge?.Invoke(this.GameObject(), 
                 StarterPointPosition.instance.CardDraged[StarterPointPosition.instance.GetArrayNum(check)]);
             this.transform.position = StartPoint.transform.position;
 
         }
+        else
+        {
+            StarterPointPosition.instance.GetPlayerCardOBject(check).GetComponent<CardHealth>().GetAttacked(this.GetComponent<CardNum>().Number);
+            TurnManage.instance.SkipTurn();
+        }
+
+        this.transform.position = StartPoint.transform.position;
     }
 
     public void DisableCard()
@@ -54,5 +70,20 @@ public class CardDrag : MonoBehaviour , IBeginDragHandler, IEndDragHandler,IDrag
         this.GetComponent<Image>().enabled = true;
         transform.GetChild(0).GetComponent<TextMeshProUGUI>().enabled = true;
     }
+
+
+    public void EnableCardReturnButton(bool check)
+    {
+        if (this.GetComponent<CardNum>().ReturnNum.Count > 0)
+        {
+            buttonScript.enabled = check;
+        }
+        else
+        {
+            buttonScript.enabled = false;
+        }
+    }
+
+    }
     
-}
+

@@ -1,23 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class ReturnScript : MonoBehaviour
 {
      List<ReturnObject> OrginNum = new List<ReturnObject>();
 
     public static ReturnScript instance;
-
-    int count;
-
     
+    int count = 0;
 
+    public UnityEvent<bool> enableCardReturnMode;
 
-    private void Awake()
+    void Awake()
     {
         instance = this;
-        count = 0;
     }
+
+
+    bool isReturnModeOn = false;
+
+    private void Start()
+    {
+        StartCoroutine(enableCardToFalse());
+    }
+
+    IEnumerator enableCardToFalse()
+    {
+        yield return new WaitForSeconds(0.1f);
+        enableCardReturnMode.Invoke(false);
+    }
+
+    public void CardReturnButton()
+    {
+        if(isReturnModeOn == true)
+        {
+            isReturnModeOn = false;
+        }
+        else
+        {
+            isReturnModeOn = true;
+        }
+        enableCardReturnMode.Invoke(isReturnModeOn);
+    }
+
+
+
 
 
     public void SaveOrginNum(GameObject SaveCard1,GameObject SaveCard2)
@@ -29,6 +57,7 @@ public class ReturnScript : MonoBehaviour
         ObjectSaved.Object2Value = SaveCard2.GetComponent<CardNum>().Number;
         OrginNum.Add(ObjectSaved);
         ObjectSaved.Object2.GetComponent<CardNum>().SetSaveReturnID(count);
+        enableCardReturnMode.Invoke(isReturnModeOn);
         count++;
     }
     public void LoadNumber(int num)
