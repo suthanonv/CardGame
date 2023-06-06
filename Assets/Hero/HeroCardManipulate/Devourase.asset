@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2842d7749814cc5499d9da3ede4a346c, type: 3}
   m_Name: Devourase
   m_EditorClassIdentifier: 
-  Name: 
-  SummonCost: 0
-  Force: 0
-  SkillCost: 0
+  Name: Devourase
+  SummonCost: 2
+  Force: 11
+  SkillCost: 3
+  CardType: 0
   Skill: {fileID: 0}

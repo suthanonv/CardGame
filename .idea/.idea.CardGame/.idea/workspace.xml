@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3a6eb79-f0e6-43ab-84ba-4ba6e99619b7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CardSkill.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/CardSkill.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/HeroCardOnCard.cs" beforeDir="false" />
@@ -93,7 +94,7 @@
       <workItem from="1685428336387" duration="7317000" />
       <workItem from="1685461295527" duration="2386000" />
       <workItem from="1685498375404" duration="2487000" />
-      <workItem from="1686018634007" duration="2048000" />
+      <workItem from="1686018634007" duration="2860000" />
     </task>
     <servers />
   </component>

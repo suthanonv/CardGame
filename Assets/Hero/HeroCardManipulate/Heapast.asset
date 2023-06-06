@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2842d7749814cc5499d9da3ede4a346c, type: 3}
   m_Name: Heapast
   m_EditorClassIdentifier: 
-  Name: 
-  SummonCost: 0
-  Force: 0
-  SkillCost: 0
+  Name: Heapast
+  SummonCost: 2
+  Force: 3
+  SkillCost: 4
+  CardType: 0
   Skill: {fileID: 0}
