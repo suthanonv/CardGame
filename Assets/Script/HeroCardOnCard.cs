@@ -24,6 +24,7 @@ public class HeroCardOnCard : MonoBehaviour
         SkillOfCard = Instantiate(newCard.Skill, this.transform);
         SkillOfCard.SetHeroCardOnCard(this);
         SkillOfCard.SetButton( CardSkillButton);
+        this.GetComponent<CardHealth>().SetHealth(heroCard.Force);
         typeOfCard = heroCard.CardType;
     }
  
