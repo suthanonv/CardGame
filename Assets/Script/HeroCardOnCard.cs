@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 public class HeroCardOnCard : MonoBehaviour
 {
-   [SerializeField] HeroCard heroCard;
+   [SerializeField]public HeroCard heroCard;
     CardSkill SkillOfCard;
     Button CardSkillButton;
 
