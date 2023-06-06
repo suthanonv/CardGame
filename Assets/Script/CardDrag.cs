@@ -38,22 +38,28 @@ public class CardDrag : MonoBehaviour , IBeginDragHandler, IEndDragHandler,IDrag
     {
 
         Transform check = StarterPointPosition.instance.GetTransform(this.transform);
-        if(check == null)
+        
+        if(check == null && StarterPointPosition.instance.GetMeCard(this.transform) == null)
         {
+            Debug.Log(StarterPointPosition.instance.GetMeCard(this.transform));
             this.transform.position = StartPoint.transform.position;
 
+            Debug.Log("No Case");
         }
         else if(StarterPointPosition.instance.GetMeCard(this.transform) != null)
         {
             HeroCardOnCard HeroCard = StarterPointPosition.instance.GetMeCard(this.transform).GetComponent<HeroCardOnCard>();
 
-            if(HeroCard.GetCardType() == CardType.NeedNumberToActiveSkill)
+            Debug.Log("Active Skill");
+            if (HeroCard.GetCardType() == CardType.NeedNumberToActiveSkill)
             {
-                this.GetComponent<CardNum>().Number = HeroCard.GetSkillCard().ActiveCardSkillByNumber(this.GetComponent<CardNum>().Number);
+                ReturnScript.instance.SaveOrginNum(this.gameObject, this.gameObject);
+                this.GetComponent<CardNum>().ChangeNumber(HeroCard.GetSkillCard().ActiveCardSkillByNumber(this.GetComponent<CardNum>().Number));
             }
         }
         else if(!StarterPointPosition.instance.CheckIsPositionEqualToPlayerAttackPoint(check))
         {
+            Debug.Log("Merge");
             OnMerge?.Invoke(this.GameObject(), 
                 StarterPointPosition.instance.CardDraged[StarterPointPosition.instance.GetArrayNum(check)]);
             this.transform.position = StartPoint.transform.position;
@@ -61,6 +67,7 @@ public class CardDrag : MonoBehaviour , IBeginDragHandler, IEndDragHandler,IDrag
         }
         else
         {
+            Debug.Log("Attack");
             StarterPointPosition.instance.GetPlayerCardOBject(check).GetComponent<CardHealth>().GetAttacked(this.GetComponent<CardNum>().Number);
             TurnManage.instance.SkipTurn();
         }

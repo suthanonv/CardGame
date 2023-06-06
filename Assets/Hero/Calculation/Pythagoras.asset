@@ -16,4 +16,5 @@ MonoBehaviour:
   SummonCost: 0
   Force: 0
   SkillCost: 0
-  Skill: {fileID: 0}
+  CardType: 0
+  Skill: {fileID: 1703033970951573288, guid: c15dc5684dbfcff4c88b9e9f60957820, type: 3}

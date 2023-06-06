@@ -8,13 +8,14 @@ public class HeroCardOnCard : MonoBehaviour
 {
    [SerializeField] HeroCard heroCard;
     CardSkill SkillOfCard;
-    [SerializeField] Button CardSkillButton;
-    public UnityEvent<float> CardActiveByNum;
+    Button CardSkillButton;
+
     public CardType typeOfCard;
 
     private void Start()
     {
         SetHeroCard(heroCard);
+        CardSkillButton = this.GetComponent<Button>();
     }
 
     public void SetHeroCard(HeroCard newCard)

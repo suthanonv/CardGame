@@ -166,27 +166,40 @@ public class StarterPointPosition : MonoBehaviour
 
    public GameObject GetMeCard(Transform point)
     {
+        GameObject CurrentLowestObject = null;
         int count = 0;
+        float lowestRaduis = 10000;
         if (TurnManage.instance.CurrentPLayerTurn == PlayerTurn.Player1)
         {
-            foreach (Transform i in PlayerOneCardPosition)
+           foreach(Transform i in PlayerOneCardPosition)
             {
-                if (i.position == point.position)
+                if(Vector2.Distance(point.transform.position,i.transform.position) < lowestRaduis)
                 {
-                    return PlayerOneCard[count];
+                    lowestRaduis = Vector2.Distance(point.transform.position, i.transform.position);
+                    CurrentLowestObject = PlayerOneCard[count];
                 }
                 count++;
+            }
+           
+           if(lowestRaduis <= FixRaduis)
+            {
+                return CurrentLowestObject;
             }
         }
         else
         {
             foreach (Transform i in PlayerTwoCardPosition)
             {
-                if (i.position == point.position)
+                if (Vector2.Distance(point.transform.position, i.transform.position) < lowestRaduis)
                 {
-                    return PlayerTwoCard[count];
+                    lowestRaduis = Vector2.Distance(point.transform.position, i.transform.position);
+                    CurrentLowestObject = PlayerTwoCard[count];
                 }
                 count++;
+            }
+            if (lowestRaduis <= FixRaduis)
+            {
+                return CurrentLowestObject;
             }
         }
         return null;

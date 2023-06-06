@@ -232,6 +232,7 @@ MonoBehaviour:
   text: {fileID: 1469035797}
   CardID: 7
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &25276499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +289,50 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &95518070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95518072}
+  - component: {fileID: 95518071}
+  m_Layer: 0
+  m_Name: PlayerCardManage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &95518071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95518070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36336e448a1f73f448520f0bdd0d1329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &95518072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95518070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1125.1774, y: 524.0176, z: 2.126386}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &110338480
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +505,7 @@ MonoBehaviour:
   text: {fileID: 324277850}
   CardID: 10
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &126157784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,6 +827,8 @@ GameObject:
   - component: {fileID: 235302442}
   - component: {fileID: 235302441}
   - component: {fileID: 235302440}
+  - component: {fileID: 235302444}
+  - component: {fileID: 235302443}
   m_Layer: 5
   m_Name: Card2
   m_TagString: Untagged
@@ -859,6 +907,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235302438}
   m_CullTransparentMesh: 1
+--- !u!114 &235302443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235302438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 235302441}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &235302444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235302438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007166ba362b6f24499793012af6e689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroCard: {fileID: 11400000, guid: a4c183a75ece5e1479e51a1d9db120aa, type: 2}
+  typeOfCard: 0
 --- !u!1 &235628044
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1103,8 @@ GameObject:
   - component: {fileID: 257335269}
   - component: {fileID: 257335268}
   - component: {fileID: 257335267}
+  - component: {fileID: 257335270}
+  - component: {fileID: 257335271}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -1075,6 +1183,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 257335265}
   m_CullTransparentMesh: 1
+--- !u!114 &257335270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257335265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007166ba362b6f24499793012af6e689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroCard: {fileID: 11400000, guid: a4c183a75ece5e1479e51a1d9db120aa, type: 2}
+  typeOfCard: 0
+--- !u!114 &257335271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257335265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 257335268}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &278183381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,6 +2161,7 @@ MonoBehaviour:
   text: {fileID: 2126286261}
   CardID: 9
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &529716146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2264,6 +2431,8 @@ GameObject:
   - component: {fileID: 659138205}
   - component: {fileID: 659138204}
   - component: {fileID: 659138203}
+  - component: {fileID: 659138207}
+  - component: {fileID: 659138206}
   m_Layer: 5
   m_Name: Card2
   m_TagString: Untagged
@@ -2342,6 +2511,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659138201}
   m_CullTransparentMesh: 1
+--- !u!114 &659138206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659138201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 659138204}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &659138207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659138201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007166ba362b6f24499793012af6e689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroCard: {fileID: 11400000, guid: a4c183a75ece5e1479e51a1d9db120aa, type: 2}
+  typeOfCard: 0
 --- !u!1 &666055127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,6 +2678,7 @@ MonoBehaviour:
   text: {fileID: 2123450179}
   CardID: 5
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &666055135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2831,6 +3059,7 @@ MonoBehaviour:
   text: {fileID: 1683656558}
   CardID: 6
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &783657008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3938,6 +4167,7 @@ MonoBehaviour:
   text: {fileID: 476660687}
   CardID: 8
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &1240893857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4435,6 +4665,7 @@ MonoBehaviour:
   text: {fileID: 716897484}
   CardID: 2
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &1426860067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4600,6 +4831,7 @@ MonoBehaviour:
   text: {fileID: 439034126}
   CardID: 3
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &1459305996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4900,6 +5132,7 @@ MonoBehaviour:
   text: {fileID: 807812408}
   CardID: 4
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &1525997313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5390,6 +5623,8 @@ GameObject:
   - component: {fileID: 1624492911}
   - component: {fileID: 1624492910}
   - component: {fileID: 1624492909}
+  - component: {fileID: 1624492913}
+  - component: {fileID: 1624492912}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -5468,6 +5703,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624492907}
   m_CullTransparentMesh: 1
+--- !u!114 &1624492912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624492907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1624492910}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1624492913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624492907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 007166ba362b6f24499793012af6e689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroCard: {fileID: 11400000, guid: a4c183a75ece5e1479e51a1d9db120aa, type: 2}
+  typeOfCard: 0
 --- !u!1 &1660801647
 GameObject:
   m_ObjectHideFlags: 0
@@ -6391,6 +6684,7 @@ MonoBehaviour:
   text: {fileID: 1674475973}
   CardID: 1
   ReturnNum: 
+  CanMearge: 0
 --- !u!114 &1796183788
 MonoBehaviour:
   m_ObjectHideFlags: 0
