@@ -43,6 +43,15 @@ public class CardDrag : MonoBehaviour , IBeginDragHandler, IEndDragHandler,IDrag
             this.transform.position = StartPoint.transform.position;
 
         }
+        else if(StarterPointPosition.instance.GetMeCard(this.transform) != null)
+        {
+            HeroCardOnCard HeroCard = StarterPointPosition.instance.GetMeCard(this.transform).GetComponent<HeroCardOnCard>();
+
+            if(HeroCard.GetCardType() == CardType.NeedNumberToActiveSkill)
+            {
+                this.GetComponent<CardNum>().Number = HeroCard.GetSkillCard().ActiveCardSkillByNumber(this.GetComponent<CardNum>().Number);
+            }
+        }
         else if(!StarterPointPosition.instance.CheckIsPositionEqualToPlayerAttackPoint(check))
         {
             OnMerge?.Invoke(this.GameObject(), 

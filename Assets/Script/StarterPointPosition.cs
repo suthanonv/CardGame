@@ -161,6 +161,35 @@ public class StarterPointPosition : MonoBehaviour
         }
         return null;
     }
-  
+
+
+
+   public GameObject GetMeCard(Transform point)
+    {
+        int count = 0;
+        if (TurnManage.instance.CurrentPLayerTurn == PlayerTurn.Player1)
+        {
+            foreach (Transform i in PlayerOneCardPosition)
+            {
+                if (i.position == point.position)
+                {
+                    return PlayerOneCard[count];
+                }
+                count++;
+            }
+        }
+        else
+        {
+            foreach (Transform i in PlayerTwoCardPosition)
+            {
+                if (i.position == point.position)
+                {
+                    return PlayerTwoCard[count];
+                }
+                count++;
+            }
+        }
+        return null;
+    }
 
 }

@@ -2,8 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CardType
+{
+    NeedNumberToActiveSkill,PassiveSkill,NeedPlayerInput
+}
+
+
 [CreateAssetMenu]
-public class HeroCrad : ScriptableObject
+public class HeroCard : ScriptableObject
 {
 
     public string Name;
@@ -13,7 +19,7 @@ public class HeroCrad : ScriptableObject
     public float Force;
 
     public int SkillCost;
-
-    public GameObject Skill;
+    public CardType CardType;
+    public CardSkill Skill;
 
 }
