@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,12 +6,17 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 public class HeroCardOnCard : MonoBehaviour
 {
-    HeroCard heroCard;
+   [SerializeField] HeroCard heroCard;
     CardSkill SkillOfCard;
     [SerializeField] Button CardSkillButton;
     public UnityEvent<float> CardActiveByNum;
     public CardType typeOfCard;
-    
+
+    private void Start()
+    {
+        SetHeroCard(heroCard);
+    }
+
     public void SetHeroCard(HeroCard newCard)
     {
         heroCard = newCard;
