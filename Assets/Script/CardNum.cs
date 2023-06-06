@@ -49,8 +49,11 @@ public class CardNum : MonoBehaviour
         }
     }
 
+
+  public  bool CanMearge;
     public void FaceUpCardTrue(bool isFaceUp)
     {
+        CanMearge = isFaceUp;
         if (isFaceUp)
         {
             text.SetText(Number.ToString());

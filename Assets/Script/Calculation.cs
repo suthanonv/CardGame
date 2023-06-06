@@ -25,7 +25,7 @@ public class Calculation : MonoBehaviour
 
     void StoreNumber(GameObject Card1, GameObject Card2)
     {
-        if (Card1.GetComponent<CardNum>().CardID != Card2.GetComponent<CardNum>().CardID)
+        if (Card1.GetComponent<CardNum>().CardID != Card2.GetComponent<CardNum>().CardID && Card1.GetComponent<CardNum>().CanMearge && Card2.GetComponent<CardNum>().CanMearge)
         {
             num1 = Card1.GetComponent<CardNum>().Number;
             num2 = Card2.GetComponent<CardNum>().Number;
