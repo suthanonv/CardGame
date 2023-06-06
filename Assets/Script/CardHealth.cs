@@ -6,6 +6,10 @@ public class CardHealth : MonoBehaviour
 {
     public float Health;
 
+    public void SetHealth(float newHealth)
+    {
+        Health = newHealth;
+    }
 
     public void GetAttacked(float NumToAtk)
     {
