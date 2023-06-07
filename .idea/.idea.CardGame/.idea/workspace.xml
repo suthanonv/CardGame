@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c3a6eb79-f0e6-43ab-84ba-4ba6e99619b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/Calculation/Pythagoras.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/Calculation/Pythagoras.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Coalesce.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Coalesce.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Pythagoras.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Pythagoras.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TurnManage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TurnManage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +90,7 @@
       <workItem from="1685461295527" duration="2386000" />
       <workItem from="1685498375404" duration="2487000" />
       <workItem from="1686018634007" duration="5931000" />
+      <workItem from="1686103106873" duration="2638000" />
     </task>
     <servers />
   </component>

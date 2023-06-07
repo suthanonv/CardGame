@@ -10,7 +10,7 @@ public enum PlayerTurn
 
 public class TurnManage : MonoBehaviour
 {
-    int turnCount = 1;
+    public  int turnCount = 1;
 
     public static TurnManage instance;
 
@@ -54,6 +54,7 @@ public class TurnManage : MonoBehaviour
                 i.GetComponent<CardNum>().FaceUpCardTrue(true);
 
                 CurrentCount++;
+                GameObject.Find("ManaPool").GetComponent<ManaSystem>().LoadMana(turnCount);
             }
         }
     }
