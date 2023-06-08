@@ -13,7 +13,7 @@ public class CardHealth : MonoBehaviour
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Force;
     public TextMeshProUGUI Skill;
-    private HeroCard heroCard;
+    public HeroCard heroCard;
 
     private void Awake()
     {

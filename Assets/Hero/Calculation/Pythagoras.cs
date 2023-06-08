@@ -5,11 +5,19 @@ using UnityEngine.UI;
 
 public class Pythagoras : CardSkill
 {
- 
+    private int manaCost = 1;
 
     public override float ActiveCardSkillByNumber(float Number)
     {
-        return Number * Number;
+        if (GameObject.Find("ManaPool").GetComponent<ManaSystem>().mana >= manaCost)
+        {
+            GameObject.Find("ManaPool").GetComponent<ManaSystem>().ConsumeMana(manaCost);
+            return Number * Number;
+        }
+        else
+        {
+            return Number;
+        }
     }
 
     public override void SetHeroCardOnCard(HeroCardOnCard Card)

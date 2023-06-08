@@ -1011,6 +1011,7 @@ MonoBehaviour:
   Name: {fileID: 1823097190}
   Force: {fileID: 482183686}
   Skill: {fileID: 1923847557}
+  heroCard: {fileID: 0}
 --- !u!114 &235302441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1318,6 +1319,7 @@ MonoBehaviour:
   Name: {fileID: 287759939}
   Force: {fileID: 1029889320}
   Skill: {fileID: 1801098074}
+  heroCard: {fileID: 0}
 --- !u!114 &257335268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2947,6 +2949,7 @@ MonoBehaviour:
   Name: {fileID: 1457973014}
   Force: {fileID: 1899084514}
   Skill: {fileID: 883503835}
+  heroCard: {fileID: 0}
 --- !u!114 &659138204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6846,6 +6849,7 @@ MonoBehaviour:
   Name: {fileID: 179762060}
   Force: {fileID: 2049686371}
   Skill: {fileID: 1409432561}
+  heroCard: {fileID: 0}
 --- !u!114 &1624492910
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -21,4 +21,10 @@ public class ManaSystem : MonoBehaviour
         Text.SetText(mana.ToString());
     }
 
+    public void ConsumeMana(int ManaCost)
+    {
+        mana -= ManaCost;
+        UpdateMana();
+    }
+
 }
