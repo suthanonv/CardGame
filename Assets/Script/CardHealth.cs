@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -31,6 +32,19 @@ public class CardHealth : MonoBehaviour
     {
         Health = newHealth;
         Force.SetText(newHealth.ToString());
+    }
+
+    public void AddToHealth(float healthToAdd)
+    {
+        Health += healthToAdd;
+        Force.SetText(Health.ToString());
+    }
+
+    public void MultiplyToHealth(float healthToMultiply)
+    {
+        float NewHealth = Health * healthToMultiply;
+        Health = NewHealth;
+        Force.SetText(Health.ToString());
     }
 
     public void GetAttacked(float NumToAtk)

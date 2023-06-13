@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Coalesce : CardSkill
+public class Hepast : CardSkill
 {
-    private int manaCost = 3;
+    private int manaCost = 4;
     private GameObject teamMateCard;
 
     public override float ActiveCardSkillByNumber(float Number)
@@ -28,7 +28,7 @@ public class Coalesce : CardSkill
         if (GameObject.Find("ManaPool").GetComponent<ManaSystem>().mana >= manaCost)
         {
             GameObject.Find("ManaPool").GetComponent<ManaSystem>().ConsumeMana(manaCost);
-            teamMateCard.GetComponent<CardHealth>().AddToHealth(91);
+            teamMateCard.GetComponent<CardHealth>().MultiplyToHealth(3);
         }
     }
 
@@ -44,5 +44,4 @@ public class Coalesce : CardSkill
     {
        
     }
-    
 }

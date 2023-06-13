@@ -9,6 +9,7 @@ public class HeroCardOnCard : MonoBehaviour
    [SerializeField]public HeroCard heroCard;
     CardSkill SkillOfCard;
     Button CardSkillButton;
+    [SerializeField] public GameObject TeamMateCard;
 
     public CardType typeOfCard;
 
