@@ -17,4 +17,4 @@ MonoBehaviour:
   Force: 200
   SkillCost: 3
   CardType: 0
-  Skill: {fileID: 0}
+  Skill: {fileID: 1411116198551891352, guid: 58b3939b4e9018940aa63d022909ecc2, type: 3}

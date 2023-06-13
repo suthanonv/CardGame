@@ -1107,6 +1107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heroCard: {fileID: 11400000, guid: a4c183a75ece5e1479e51a1d9db120aa, type: 2}
+  TeamMateCard: {fileID: 0}
   typeOfCard: 0
 --- !u!114 &235302445
 MonoBehaviour:
@@ -1370,8 +1371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007166ba362b6f24499793012af6e689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heroCard: {fileID: 11400000, guid: a4c183a75ece5e1479e51a1d9db120aa, type: 2}
-  typeOfCard: 0
+  heroCard: {fileID: 11400000, guid: aab3c971fc5cb12498b5563d2366a186, type: 2}
+  TeamMateCard: {fileID: 659138201}
+  typeOfCard: 2
 --- !u!114 &257335271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3044,8 +3046,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007166ba362b6f24499793012af6e689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heroCard: {fileID: 11400000, guid: a4c183a75ece5e1479e51a1d9db120aa, type: 2}
-  typeOfCard: 0
+  heroCard: {fileID: 11400000, guid: e274aada2971d914c8279ca22cd45c07, type: 2}
+  TeamMateCard: {fileID: 257335265}
+  typeOfCard: 2
 --- !u!114 &659138208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6945,6 +6948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heroCard: {fileID: 11400000, guid: a4c183a75ece5e1479e51a1d9db120aa, type: 2}
+  TeamMateCard: {fileID: 0}
   typeOfCard: 0
 --- !u!114 &1624492914
 MonoBehaviour:
@@ -7582,10 +7586,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 235628045}
-  - {fileID: 1154154773}
   - {fileID: 220847634}
   - {fileID: 2139291663}
   - {fileID: 385811168}
+  - {fileID: 1154154773}
   - {fileID: 1691153144}
   - {fileID: 1056425196}
   m_Father: {fileID: 0}
