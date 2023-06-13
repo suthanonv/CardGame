@@ -69,7 +69,6 @@ public class CardDrag : MonoBehaviour , IBeginDragHandler, IEndDragHandler,IDrag
         {
             Debug.Log("Attack");
             StarterPointPosition.instance.GetPlayerCardOBject(check).GetComponent<CardHealth>().GetAttacked(this.GetComponent<CardNum>().Number);
-            TurnManage.instance.SkipTurn();
         }
 
         this.transform.position = StartPoint.transform.position;

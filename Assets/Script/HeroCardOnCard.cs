@@ -14,8 +14,8 @@ public class HeroCardOnCard : MonoBehaviour
 
     private void Start()
     {
-        SetHeroCard(heroCard);
         CardSkillButton = this.GetComponent<Button>();
+        SetHeroCard(heroCard);
     }
 
     public void SetHeroCard(HeroCard newCard)

@@ -12,7 +12,7 @@ public class ManaSystem : MonoBehaviour
 
     public void LoadMana(int turnCount)
     {
-        mana = turnCount;
+        mana = (turnCount += 1);
         UpdateMana();
     }
 

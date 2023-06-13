@@ -30,15 +30,21 @@ public class CardHealth : MonoBehaviour
     public void SetHealth(float newHealth)
     {
         Health = newHealth;
+        Force.SetText(newHealth.ToString());
     }
 
     public void GetAttacked(float NumToAtk)
     {
-        if(Health == NumToAtk)
+        if (Health == NumToAtk)
         {
+            Debug.Log("dead");
             TurnManage.instance.SkipTurn();
         }
-                
+        else
+        {
+            Debug.Log("attack failed");
+        }
+
     }
 
 }
