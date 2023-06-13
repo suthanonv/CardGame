@@ -4,6 +4,8 @@
     <list default="true" id="c3a6eb79-f0e6-43ab-84ba-4ba6e99619b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Coalesce/Coalesce.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Coalesce/Coalesce.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Heapast.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Heapast.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" afterDir="false" />
     </list>
@@ -15,6 +17,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Coalesce/Coalesce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Heapast/Hepast.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CardNum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -94,7 +97,7 @@
       <workItem from="1686018634007" duration="5931000" />
       <workItem from="1686103106873" duration="2638000" />
       <workItem from="1686210854989" duration="1759000" />
-      <workItem from="1686620165359" duration="5483000" />
+      <workItem from="1686620165359" duration="6237000" />
     </task>
     <servers />
   </component>
