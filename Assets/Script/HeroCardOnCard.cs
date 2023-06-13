@@ -10,11 +10,13 @@ public class HeroCardOnCard : MonoBehaviour
     CardSkill SkillOfCard;
     Button CardSkillButton;
     [SerializeField] public GameObject TeamMateCard;
+    [SerializeField] public GameObject ThisCard;
 
     public CardType typeOfCard;
 
     private void Start()
     {
+        ThisCard = this.gameObject;
         CardSkillButton = this.GetComponent<Button>();
         SetHeroCard(heroCard);
     }

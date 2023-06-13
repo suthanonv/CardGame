@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2842d7749814cc5499d9da3ede4a346c, type: 3}
-  m_Name: Devourase
+  m_Name: Minus
   m_EditorClassIdentifier: 
-  Name: Devourase
+  Name: Minus
   SummonCost: 2
-  Force: 11
-  SkillCost: 3
+  Force: 900
+  SkillCost: 2
   CardType: 0
-  Skill: {fileID: 0}
+  Skill: {fileID: 4096846800260347068, guid: 4f38ceb89ce3ee844934ba3ae25bb801, type: 3}

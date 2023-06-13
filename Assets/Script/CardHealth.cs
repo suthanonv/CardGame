@@ -47,6 +47,12 @@ public class CardHealth : MonoBehaviour
         Force.SetText(Health.ToString());
     }
 
+    public void SubtractFromHealth(float healtToSubtract)
+    {
+        Health -= healtToSubtract;
+        Force.SetText(Health.ToString());
+    }
+
     public void GetAttacked(float NumToAtk)
     {
         if (Health == NumToAtk)
