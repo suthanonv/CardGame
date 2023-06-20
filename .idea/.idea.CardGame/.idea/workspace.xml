@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c3a6eb79-f0e6-43ab-84ba-4ba6e99619b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Devourase.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Devourase.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Minus.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Minus.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ManaSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ManaSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TurnManage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/TurnManage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +97,7 @@
       <workItem from="1686103106873" duration="2638000" />
       <workItem from="1686210854989" duration="1759000" />
       <workItem from="1686620165359" duration="7834000" />
+      <workItem from="1687227792449" duration="3672000" />
     </task>
     <servers />
   </component>

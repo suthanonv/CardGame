@@ -10,7 +10,7 @@ public enum PlayerTurn
 
 public class TurnManage : MonoBehaviour
 {
-    public  int turnCount = 1;
+    public static int turnCount = 1;
 
     public static TurnManage instance;
 
