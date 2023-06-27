@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c3a6eb79-f0e6-43ab-84ba-4ba6e99619b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero/ManaManipulate/Ingurge.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/ManaManipulate/Ingurge.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Kritas.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Kritas.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Qaul.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Qaul.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Devourase/Devourace.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Heapast/Hepast.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Minus/Minus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Kritas/Kritas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CardNum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -95,7 +102,8 @@
       <workItem from="1686103106873" duration="2638000" />
       <workItem from="1686210854989" duration="1759000" />
       <workItem from="1686620165359" duration="7834000" />
-      <workItem from="1687227792449" duration="5056000" />
+      <workItem from="1687227792449" duration="5057000" />
+      <workItem from="1687831162881" duration="2110000" />
     </task>
     <servers />
   </component>

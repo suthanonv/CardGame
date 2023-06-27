@@ -1372,7 +1372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007166ba362b6f24499793012af6e689, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  heroCard: {fileID: 11400000, guid: 384ef5ff4b2f39243b5a8208c3bb7eb5, type: 2}
+  heroCard: {fileID: 11400000, guid: bf145df63439c9741a5e6fcda61a9c2e, type: 2}
   TeamMateCard: {fileID: 659138201}
   ThisCard: {fileID: 257335265}
   typeOfCard: 0
@@ -5165,7 +5165,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 717ab1a765ad45b44b5f757e6e77ea2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnCount: 1
   CurrentPLayerTurn: 0
 --- !u!4 &1313132504
 Transform:

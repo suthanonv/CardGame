@@ -15,6 +15,6 @@ MonoBehaviour:
   Name: Kritas
   SummonCost: 3
   Force: 121
-  SkillCost: 3
+  SkillCost: 2
   CardType: 0
-  Skill: {fileID: 0}
+  Skill: {fileID: 6911134699585722589, guid: a6d86afcf7c5adf4cbc29940d0e3492d, type: 3}
