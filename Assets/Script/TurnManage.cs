@@ -65,13 +65,25 @@ public class TurnManage : MonoBehaviour
         if (turnCount < 10)
         {
             LoadNewTurn();
-            ChangePlayerTurn();
         }
+        ChangePlayerTurn();
     }
 
 
     public void ChangePlayerTurn()
     {
+        GameObject.Find("ManaPool").GetComponent<ManaSystem>().LoadMana(turnCount);
+        if (turnCount >= 10)
+        {
+            foreach (GameObject i in StarterPointPosition.instance.CardDraged)
+            {
+                while(i.GetComponent<CardNum>().ReturnNum.Count > 0)
+                {
+                    i.GetComponent<CardNum>().Return();
+                }
+                i.GetComponent<CardNum>().FaceUpCardTrue(true);   
+            }   
+        }
         if(CurrentPLayerTurn == PlayerTurn.Player1)
         {
             CurrentPLayerTurn = PlayerTurn.Player2;

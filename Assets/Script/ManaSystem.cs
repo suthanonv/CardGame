@@ -13,6 +13,10 @@ public class ManaSystem : MonoBehaviour
     public void LoadMana(int turnCount)
     {
         mana = (turnCount += 1);
+        if (mana >= 10)
+        {
+            mana = 10;
+        }
         UpdateMana();
     }
 

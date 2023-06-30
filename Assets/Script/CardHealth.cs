@@ -58,6 +58,7 @@ public class CardHealth : MonoBehaviour
         if (Health == NumToAtk)
         {
             Debug.Log("dead");
+            this.gameObject.SetActive(false);
             TurnManage.instance.SkipTurn();
         }
         else
