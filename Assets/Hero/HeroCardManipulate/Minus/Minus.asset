@@ -18,3 +18,5 @@ MonoBehaviour:
   SkillCost: 2
   CardType: 0
   Skill: {fileID: 4096846800260347068, guid: 4f38ceb89ce3ee844934ba3ae25bb801, type: 3}
+  Skill_Info: "merge this card with your other hero card and subtract this card\u2019s
+    force to it. (cost 2 mana)"

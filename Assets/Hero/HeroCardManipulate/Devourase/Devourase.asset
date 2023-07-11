@@ -18,3 +18,4 @@ MonoBehaviour:
   SkillCost: 3
   CardType: 0
   Skill: {fileID: 2220344459003733395, guid: 504a3b1a7e36cfb4f9be4dc58556c716, type: 3}
+  Skill_Info: Multiply the force of this card by a chosen number card. (cost 3 mana)

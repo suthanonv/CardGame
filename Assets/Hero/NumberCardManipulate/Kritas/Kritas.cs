@@ -10,7 +10,7 @@ public class Kritas : CardSkill
     {        if (GameObject.Find("ManaPool").GetComponent<ManaSystem>().mana >= manaCost)
         {
             GameObject.Find("ManaPool").GetComponent<ManaSystem>().ConsumeMana(manaCost);
-            Number = 0;
+            Number = -1;
             return Number;
         }
         else

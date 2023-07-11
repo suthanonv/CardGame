@@ -18,3 +18,5 @@ MonoBehaviour:
   SkillCost: 3
   CardType: 2
   Skill: {fileID: 1852130760485185358, guid: 17729838fca64244696906b328004257, type: 3}
+  Skill_Info: "merge this card with your other hero card and add this card\u2019s
+    force to it. (cost 3 mana)"

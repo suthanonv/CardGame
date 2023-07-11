@@ -58,8 +58,12 @@ public class CardHealth : MonoBehaviour
         if (Health == NumToAtk)
         {
             Debug.Log("dead");
-            this.gameObject.SetActive(false);
-            TurnManage.instance.SkipTurn();
+            this.gameObject.GetComponent<Image>().enabled = false;
+            this.gameObject.GetComponent<HeroCardOnCard>().enabled = false;
+            this.gameObject.GetComponent<CardHealth>().enabled = false;
+            Name.SetText(" ");
+            Skill.SetText(" ");
+            Force.SetText(" ");
         }
         else
         {

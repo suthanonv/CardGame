@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Agitase : CardSkill
+public class Agitaze : CardSkill
 {
     private int manaCost = 3;
     public override float ActiveCardSkillByNumber(float Number)

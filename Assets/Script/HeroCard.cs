@@ -21,5 +21,6 @@ public class HeroCard : ScriptableObject
     public int SkillCost;
     public CardType CardType;
     public CardSkill Skill;
+    public string Skill_Info;
 
 }

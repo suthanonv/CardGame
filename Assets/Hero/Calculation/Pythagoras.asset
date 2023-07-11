@@ -15,6 +15,7 @@ MonoBehaviour:
   Name: Pythagoras
   SummonCost: 3
   Force: 570
-  SkillCost: 1
+  SkillCost: 3
   CardType: 0
   Skill: {fileID: 1703033970951573288, guid: c15dc5684dbfcff4c88b9e9f60957820, type: 3}
+  Skill_Info: Square any number card (use 3 mana per card)

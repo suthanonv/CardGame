@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7620867888252549270
+--- !u!1 &516421366464260761
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2098302548392802494}
-  - component: {fileID: 1411116198551891352}
+  - component: {fileID: 3458413190086774757}
+  - component: {fileID: 4849882999116465910}
   m_Layer: 0
-  m_Name: Agitase
+  m_Name: Agitaze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2098302548392802494
+--- !u!4 &3458413190086774757
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7620867888252549270}
+  m_GameObject: {fileID: 516421366464260761}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 833.3933, y: 563.94415, z: -6.2085075}
+  m_LocalPosition: {x: 1128.6505, y: 563.28644, z: -3.4112766}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1411116198551891352
+--- !u!114 &4849882999116465910
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7620867888252549270}
+  m_GameObject: {fileID: 516421366464260761}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65ec75a4d831a9d4ea0c35781bbeee07, type: 3}

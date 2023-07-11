@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Pythagoras : CardSkill
 {
-    private int manaCost = 1;
+    private int manaCost = 3;
 
     public override float ActiveCardSkillByNumber(float Number)
     {
