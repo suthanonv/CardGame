@@ -3,21 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c3a6eb79-f0e6-43ab-84ba-4ba6e99619b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/Calculation/Pythagoras.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/Calculation/Pythagoras.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/Calculation/Pythagoras.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/Calculation/Pythagoras.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Agitase/Agitase.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Kritas/Kritas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Kritas/Kritas.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HeroCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HeroCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShowTurn.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ShowTurn.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SetSKillInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SetSKillInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ShowSkill.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ShowSkill.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +21,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Heapast/Hepast.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Minus/Minus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Kritas/Kritas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerDeck.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CardNum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SetSKillInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SetHeroInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Weapons-Master/Assets/TK folder/Script/Inventory.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -115,7 +108,9 @@
       <workItem from="1687831162881" duration="2110000" />
       <workItem from="1688112509266" duration="2135000" />
       <workItem from="1688522139648" duration="2255000" />
-      <workItem from="1689039169315" duration="4168000" />
+      <workItem from="1689039169315" duration="4761000" />
+      <workItem from="1689646299658" duration="8442000" />
+      <workItem from="1689731483706" duration="2547000" />
     </task>
     <servers />
   </component>

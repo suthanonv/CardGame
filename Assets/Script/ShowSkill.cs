@@ -10,7 +10,14 @@ public class ShowSkill : MonoBehaviour
 
     private void Start()
     {
-        herocard = this.GetComponent<HeroCardOnCard>().heroCard;
+        if (this.gameObject.GetComponent<SetHeroInfo>() == null)
+        {
+            herocard = this.GetComponent<HeroCardOnCard>().heroCard;
+        }
+        else
+        {
+            herocard = this.GetComponent<SetHeroInfo>().heroCard;
+        }
     }
 
     public void ShowSkillInfo()
