@@ -15,12 +15,14 @@ public class PlayerDeck : MonoBehaviour
     {
         HeroCardList.OnConfirmSelectionP1 += AddToP1Deck;
         HeroCardList.OnConfirmSelectionP2 += AddToP2Deck;
+        HeroCardOnCard.OnRespawn += RemoveFromDeck;
     }
 
     private void OnDisable()
     {
         HeroCardList.OnConfirmSelectionP1 -= AddToP1Deck;
         HeroCardList.OnConfirmSelectionP2 -= AddToP2Deck;
+        HeroCardOnCard.OnRespawn -= RemoveFromDeck;
     }
 
     void AddToP1Deck(HeroCard heroCard)
@@ -31,5 +33,17 @@ public class PlayerDeck : MonoBehaviour
     void AddToP2Deck(HeroCard heroCard)
     {
         Player2_Deck.Add(heroCard);
+    }
+
+    void RemoveFromDeck(HeroCard heroCard, string player)
+    {
+        if (player == "Player1")
+        {
+            Player1_Deck.Remove(heroCard);
+        }
+        else if(player == "Player2")
+        {
+            Player2_Deck.Remove(heroCard);
+        }
     }
 }
