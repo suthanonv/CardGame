@@ -8,11 +8,11 @@ public class ShowSkill : MonoBehaviour
     private HeroCard herocard;
     [SerializeField] public GameObject Skill_Info;
 
-    public void GetSkill()
+    private void Start()
     {
         if (this.gameObject.GetComponent<SetHeroInfo>() == null)
         {
-            herocard = this.GetComponent<HeroCardOnCard>().HeroCard;
+            herocard = this.GetComponent<HeroCardOnCard>().heroCard;
         }
         else
         {

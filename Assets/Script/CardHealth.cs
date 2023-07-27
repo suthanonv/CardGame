@@ -9,10 +9,6 @@ using Unity.VisualScripting;
 
 public class CardHealth : MonoBehaviour
 {
-
-    public static event HandleDead OnDeath; 
-    public delegate void HandleDead();
-
     public float Health;
 
     public TextMeshProUGUI Name;
@@ -20,20 +16,13 @@ public class CardHealth : MonoBehaviour
     public TextMeshProUGUI Skill;
     private HeroCard heroCard;
 
-    public void OnEnable()
+    private void Awake()
     {
-        HeroCardOnCard.OnStart += OnGameStart;
+        heroCard = this.gameObject.GetComponent<HeroCardOnCard>().heroCard;
     }
 
-    private void OnDisable()
+    private void Start()
     {
-        HeroCardOnCard.OnStart -= OnGameStart;
-    }
-
-    private void OnGameStart()
-    {
-        heroCard = this.gameObject.GetComponent<HeroCardOnCard>().HeroCard;
-        Debug.Log(heroCard.Name);
         Name.SetText(heroCard.Name);
         Force.SetText(heroCard.Force.ToString());
         Skill.SetText(heroCard.SkillCost.ToString());
@@ -75,7 +64,6 @@ public class CardHealth : MonoBehaviour
             Name.SetText(" ");
             Skill.SetText(" ");
             Force.SetText(" ");
-            OnDeath?.Invoke();
         }
         else
         {

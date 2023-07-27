@@ -35,6 +35,7 @@ public class Minus : CardSkill
 
     public override void SetButton(Button buttonToSet)
     {
+        Debug.Log(buttonToSet.gameObject.name);
         buttonToSet.onClick.AddListener(ActiveCardSkillByPlayer);
     }
 

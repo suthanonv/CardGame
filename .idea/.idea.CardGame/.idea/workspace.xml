@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c3a6eb79-f0e6-43ab-84ba-4ba6e99619b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Minus/Minus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/HeroCardManipulate/Minus/Minus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerDeck.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PlayerDeck.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HeroCardList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HeroCardList.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/ShowSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ShowSkill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SetSKillInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SetSKillInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ShowSkill.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ShowSkill.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,17 +111,6 @@
       <workItem from="1689039169315" duration="4761000" />
       <workItem from="1689646299658" duration="8442000" />
       <workItem from="1689731483706" duration="2547000" />
-      <workItem from="1689842786962" duration="204000" />
-      <workItem from="1689843028714" duration="1821000" />
-      <workItem from="1690294454757" duration="2114000" />
-      <workItem from="1690297308503" duration="248000" />
-      <workItem from="1690297568134" duration="4000" />
-      <workItem from="1690297583267" duration="37000" />
-      <workItem from="1690297630342" duration="2000" />
-      <workItem from="1690297645081" duration="15000" />
-      <workItem from="1690297691502" duration="108000" />
-      <workItem from="1690297809336" duration="34000" />
-      <workItem from="1690335924565" duration="4393000" />
     </task>
     <servers />
   </component>

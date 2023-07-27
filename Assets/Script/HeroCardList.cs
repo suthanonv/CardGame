@@ -4,17 +4,9 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using Object = UnityEngine.Object;
-using UnityEngine.Events;
 
 public class HeroCardList : MonoBehaviour
 {
-    public static HeroCardList instance;
-
-    private void Awake()
-    {
-        instance = this;
-    }
-
     public static event HandleP1DeckCreation OnConfirmSelectionP1;
     public delegate void HandleP1DeckCreation(HeroCard heroCard);
 
@@ -24,8 +16,6 @@ public class HeroCardList : MonoBehaviour
     public static event HandleDiselectedCardWhenConfirm OnConfirm;
     public delegate void HandleDiselectedCardWhenConfirm();
 
-    public UnityEvent OnFinishSelectEvent;
-
     [SerializeField] public List<HeroCard> HeroCards = new List<HeroCard>();
     [SerializeField] public int MaximumCardSelected = 4;
 
@@ -33,8 +23,6 @@ public class HeroCardList : MonoBehaviour
 
     public static bool player1Selection = true;
 
-    
-     
     private void OnEnable()
     {
         SetHeroInfo.OnCardSelected += AddSelectedCard;
@@ -90,7 +78,6 @@ public class HeroCardList : MonoBehaviour
             }
             HeroCards.Clear();
             GameObject.Find("CardSelectMenu").SetActive(false);
-            OnFinishSelectEvent?.Invoke();
         }
     }
 }

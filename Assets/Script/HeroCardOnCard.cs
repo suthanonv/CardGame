@@ -4,89 +4,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-using Random = UnityEngine.Random;
-using UnityEngine.Events;
-
 public class HeroCardOnCard : MonoBehaviour
 {
-    public static event HandleRespawn OnRespawn;
-    public delegate void HandleRespawn(HeroCard heroCard, string player);
-
-    public static event HandleOnGameStart OnStart;
-    public delegate void HandleOnGameStart();
-    
-   [SerializeField]public HeroCard HeroCard;
+   [SerializeField]public HeroCard heroCard;
     CardSkill SkillOfCard;
     Button CardSkillButton;
     [SerializeField] public GameObject TeamMateCard;
     [SerializeField] public GameObject ThisCard;
-    [SerializeField] public GameObject Player;
-    [SerializeField] public GameObject Deck;
-
-    private PlayerDeck playerDeck;
 
     public CardType typeOfCard;
 
-    public void OnEnable()
-    {
-        CardHealth.OnDeath += Death;
-        
-    }
-
-    public void OnDisable()
-    {
-        CardHealth.OnDeath -= Death;
-    }
-
     private void Start()
     {
-        playerDeck = Deck.GetComponent<PlayerDeck>();
         ThisCard = this.gameObject;
         CardSkillButton = this.GetComponent<Button>();
+        SetHeroCard(heroCard);
     }
 
     public void SetHeroCard(HeroCard newCard)
     {
-        HeroCard = newCard;
-        Debug.Log("Start To Set" + HeroCard.Name);
-        OnRespawn?.Invoke(HeroCard, Player.name);
+        heroCard = newCard;
         SkillOfCard = Instantiate(newCard.Skill, this.transform);
         SkillOfCard.SetHeroCardOnCard(this);
         SkillOfCard.SetButton( CardSkillButton);
-        this.GetComponent<CardHealth>().SetHealth(HeroCard.Force);
-        typeOfCard = HeroCard.CardType;
-        Invoke("startSet", 0.1f);
-    }
-
-    [SerializeField]ShowSkill skillToShow;
-    void startSet()
-    {
-        skillToShow = this.GetComponent<ShowSkill>();
-        OnStart?.Invoke();
-        skillToShow.GetSkill();
-    }
-
-    void Death()
-    {
-        HeroCard = null;
-    }
-
-  public  void Respawn()
-    {
-        this.gameObject.GetComponent<Image>().enabled = true;
-        this.gameObject.GetComponent<HeroCardOnCard>().enabled = true;
-        this.gameObject.GetComponent<CardHealth>().enabled = true;
-        if (Player.name == "Player1")
-        {
-            HeroCard = playerDeck.Player1_Deck[Random.Range(0, playerDeck.Player1_Deck.Count)];
-            Debug.Log(HeroCard.Name + "Set HeroCard");
-        }
-        else if (Player.name == "Player2")
-        {
-            HeroCard = playerDeck.Player2_Deck[Random.Range(0, playerDeck.Player2_Deck.Count)];
-            Debug.Log(HeroCard.Name + "Set HeroCard");
-        }
-        SetHeroCard(HeroCard);
+        this.GetComponent<CardHealth>().SetHealth(heroCard.Force);
+        typeOfCard = heroCard.CardType;
     }
  
     public CardType GetCardType()
