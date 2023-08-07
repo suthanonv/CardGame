@@ -67,6 +67,19 @@ public class TurnManage : MonoBehaviour
             LoadNewTurn();
         }
         ChangePlayerTurn();
+        CheckEndGame();
+    }
+
+    void CheckEndGame()
+    {
+        if(!StarterPointPosition.instance.PlayerOneCard[0].GetComponent<CardHealth>().isActiveAndEnabled && !StarterPointPosition.instance.PlayerOneCard[1].GetComponent<CardHealth>().isActiveAndEnabled)
+        {
+            Debug.Log("PlayerTwo Win");
+        }
+        else if(!StarterPointPosition.instance.PlayerTwoCard[0].GetComponent<CardHealth>().isActiveAndEnabled && !StarterPointPosition.instance.PlayerTwoCard[1].GetComponent<CardHealth>().isActiveAndEnabled)
+        {
+            Debug.Log("PlayerOne Win");
+        }
     }
 
 

@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using Random = UnityEngine.Random;
-using UnityEngine.Events;
 
 public class HeroCardOnCard : MonoBehaviour
 {
@@ -57,13 +56,12 @@ public class HeroCardOnCard : MonoBehaviour
         typeOfCard = HeroCard.CardType;
         Invoke("startSet", 0.1f);
     }
-
     [SerializeField]ShowSkill skillToShow;
     void startSet()
     {
         skillToShow = this.GetComponent<ShowSkill>();
-        OnStart?.Invoke();
         skillToShow.GetSkill();
+        this.GetComponent<CardHealth>().OnGameStart();
     }
 
     void Death()
@@ -73,20 +71,37 @@ public class HeroCardOnCard : MonoBehaviour
 
   public  void Respawn()
     {
+       
+        if (Player.name == "Player1" && playerDeck.Player1_Deck.Count > 0)
+        {
+            enableACard();
+            HeroCard = playerDeck.Player1_Deck[Random.Range(0, playerDeck.Player1_Deck.Count)];
+            playerDeck.Player1_Deck.Remove(HeroCard);
+            Debug.Log("Player1Deck Count" + playerDeck.Player1_Deck.Count.ToString());
+            SetHeroCard(HeroCard);
+        }
+        else if (Player.name == "Player2" && playerDeck.Player2_Deck.Count > 0)
+        {
+            enableACard();
+            HeroCard = playerDeck.Player2_Deck[Random.Range(0, playerDeck.Player2_Deck.Count)];
+            playerDeck.Player2_Deck.Remove(HeroCard);
+            Debug.Log("PLayer2Deck count" + playerDeck.Player2_Deck.Count.ToString());
+            SetHeroCard(HeroCard);
+        }
+        else
+        {
+            Debug.Log("No Card To Spawn");
+        }
+        Debug.Log("is herocard null: " + HeroCard == null);
+       
+    }
+
+
+    void enableACard()
+    {
         this.gameObject.GetComponent<Image>().enabled = true;
         this.gameObject.GetComponent<HeroCardOnCard>().enabled = true;
         this.gameObject.GetComponent<CardHealth>().enabled = true;
-        if (Player.name == "Player1")
-        {
-            HeroCard = playerDeck.Player1_Deck[Random.Range(0, playerDeck.Player1_Deck.Count)];
-            Debug.Log(HeroCard.Name + "Set HeroCard");
-        }
-        else if (Player.name == "Player2")
-        {
-            HeroCard = playerDeck.Player2_Deck[Random.Range(0, playerDeck.Player2_Deck.Count)];
-            Debug.Log(HeroCard.Name + "Set HeroCard");
-        }
-        SetHeroCard(HeroCard);
     }
  
     public CardType GetCardType()

@@ -23,6 +23,7 @@ public class CardHealth : MonoBehaviour
     public void OnEnable()
     {
         HeroCardOnCard.OnStart += OnGameStart;
+       
     }
 
     private void OnDisable()
@@ -30,10 +31,11 @@ public class CardHealth : MonoBehaviour
         HeroCardOnCard.OnStart -= OnGameStart;
     }
 
-    private void OnGameStart()
+    public void OnGameStart()
     {
         heroCard = this.gameObject.GetComponent<HeroCardOnCard>().HeroCard;
-        Debug.Log(heroCard.Name);
+        Debug.Log("Is Hero Card Null?: " + (heroCard == null).ToString());
+        // Debug.Log(heroCard.Name);
         Name.SetText(heroCard.Name);
         Force.SetText(heroCard.Force.ToString());
         Skill.SetText(heroCard.SkillCost.ToString());
@@ -76,12 +78,17 @@ public class CardHealth : MonoBehaviour
             Skill.SetText(" ");
             Force.SetText(" ");
             OnDeath?.Invoke();
+            this.GetComponent<HeroCardOnCard>().Respawn();
         }
         else
         {
             Debug.Log("attack failed");
         }
-
+        TurnManage.instance.SkipTurn();
     }
+
+
+
+
 
 }
