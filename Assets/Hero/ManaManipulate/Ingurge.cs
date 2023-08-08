@@ -44,10 +44,10 @@ public class Ingurge : CardSkill
     {
         if (isSkillUsed == false)
         {
-            if (TurnManage.turnCount == turnCheck + 1)
+            if (TurnManage.turnCount == turnCheck + 2)
             {
-                isSkillUsed = true;
                 GameObject.Find("ManaPool").GetComponent<ManaSystem>().AddToMana(StoredNumber);
+                isSkillUsed = true;
             }
         }
     }

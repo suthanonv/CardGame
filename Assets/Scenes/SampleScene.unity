@@ -2336,6 +2336,7 @@ RectTransform:
   - {fileID: 1823097189}
   - {fileID: 482183685}
   - {fileID: 1923847556}
+  - {fileID: 1344645020}
   m_Father: {fileID: 1877369845}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12524,7 +12525,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1490945728}
-  m_Father: {fileID: 1877369845}
+  m_Father: {fileID: 235302439}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -14260,7 +14261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 75, y: 121}
+  m_AnchoredPosition: {x: -25.3, y: 357.6}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1490945729
@@ -14307,7 +14308,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1624492915}
+      - m_Target: {fileID: 235302446}
         m_TargetAssemblyTypeName: ShowSkill, Assembly-CSharp
         m_MethodName: ShowSkillInfo
         m_Mode: 1
@@ -18373,7 +18374,6 @@ RectTransform:
   m_Children:
   - {fileID: 1624492908}
   - {fileID: 235302439}
-  - {fileID: 1344645020}
   m_Father: {fileID: 220847634}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -84,7 +84,6 @@ public class CardHealth : MonoBehaviour
         {
             Debug.Log("attack failed");
         }
-        TurnManage.instance.SkipTurn();
     }
 
 
