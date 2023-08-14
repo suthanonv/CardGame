@@ -20,3 +20,4 @@ MonoBehaviour:
   Skill: {fileID: 4964574539415697156, guid: 94758c6eedebf8f4a91e5d75c8199281, type: 3}
   Skill_Info: choose even number card on the field, next turn you will gain mana
     equal to that chosen card (use mana equal to half of the chosen number card)
+  HeroArt: {fileID: -1918434471, guid: 229e02c28e4c5834782b1ba540893724, type: 3}

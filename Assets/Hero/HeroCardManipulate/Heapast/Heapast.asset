@@ -20,3 +20,4 @@ MonoBehaviour:
   Skill: {fileID: 1406938048623208047, guid: 29d90b7e5c300894d98c0bf15a71276b, type: 3}
   Skill_Info: "merge this card with your other hero card and mulitply this card\u2019s
     force to it. (cost 4 mana)"
+  HeroArt: {fileID: 2062832388, guid: b036c0e52ec60f543a4d6dda9fcfb3b0, type: 3}

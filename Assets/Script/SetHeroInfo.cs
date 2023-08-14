@@ -10,6 +10,7 @@ public class SetHeroInfo : MonoBehaviour
     public TextMeshProUGUI Name;
     public TextMeshProUGUI Force;
     public TextMeshProUGUI Skill;
+    public Image image;
     public HeroCard heroCard;
 
     private bool isSelected = false;
@@ -32,10 +33,12 @@ public class SetHeroInfo : MonoBehaviour
 
     private void Start()
     {
+        image = this.GetComponent<Image>();
         Name.SetText(heroCard.Name);
         Force.SetText(heroCard.Force.ToString());
         Skill.SetText(heroCard.SkillCost.ToString());
-        
+        image.sprite = heroCard.HeroArt;
+
     }
 
     public void Selected()

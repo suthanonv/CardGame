@@ -1,10 +1,10 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 using TMPro;
 using Unity.Mathematics;
+
+using Image = Microsoft.Unity.VisualStudio.Editor.Image;
 
 public class CardNum : MonoBehaviour
 {
@@ -22,7 +22,7 @@ public class CardNum : MonoBehaviour
 
     void RandomNumber()
     {
-        Number = UnityEngine.Random.Range(1, 10);
+        Number = UnityEngine.Random.Range(1, 9);
         math.round(Number);
     }
 
@@ -63,4 +63,4 @@ public class CardNum : MonoBehaviour
             text.SetText("");
         }
     }
-    }
+}

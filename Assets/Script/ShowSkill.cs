@@ -17,6 +17,7 @@ public class ShowSkill : MonoBehaviour
         else
         {
             herocard = this.GetComponent<SetHeroInfo>().heroCard;
+            Debug.Log(herocard.name.ToString());
         }
     }
 

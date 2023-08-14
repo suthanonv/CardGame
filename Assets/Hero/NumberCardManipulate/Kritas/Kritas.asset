@@ -19,3 +19,4 @@ MonoBehaviour:
   CardType: 0
   Skill: {fileID: 6911134699585722589, guid: a6d86afcf7c5adf4cbc29940d0e3492d, type: 3}
   Skill_Info: change chosen number card value to -1. (cost 2 mana)
+  HeroArt: {fileID: 483100834, guid: 404025eb146b4334ea0a7d866cabf070, type: 3}

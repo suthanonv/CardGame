@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c3a6eb79-f0e6-43ab-84ba-4ba6e99619b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Hero/ManaManipulate/Ingurge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Hero/ManaManipulate/Ingurge.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerDeck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerDeck.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CardHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SetHeroInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SetHeroInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CardNum.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CardNum.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/HeroCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/HeroCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/SetHeroInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/SetHeroInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ShowSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/ShowSkill.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Hero/NumberCardManipulate/Kritas/Kritas.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/CardNum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/HeroCardOnCard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Weapons-Master/Assets/TK folder/Script/Inventory.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -120,7 +121,9 @@
       <workItem from="1690297691502" duration="108000" />
       <workItem from="1690297809336" duration="34000" />
       <workItem from="1690335924565" duration="4393000" />
-      <workItem from="1691458859063" duration="1164000" />
+      <workItem from="1691458859063" duration="1166000" />
+      <workItem from="1692005645102" duration="517000" />
+      <workItem from="1692007489553" duration="6532000" />
     </task>
     <servers />
   </component>

@@ -19,6 +19,12 @@ public class CardHealth : MonoBehaviour
     public TextMeshProUGUI Force;
     public TextMeshProUGUI Skill;
     private HeroCard heroCard;
+    private UnityEngine.UI.Image image;
+
+    private void Start()
+    {
+        image = this.GetComponent<UnityEngine.UI.Image>();
+    }
 
     public void OnEnable()
     {
@@ -39,6 +45,7 @@ public class CardHealth : MonoBehaviour
         Name.SetText(heroCard.Name);
         Force.SetText(heroCard.Force.ToString());
         Skill.SetText(heroCard.SkillCost.ToString());
+        image.sprite = heroCard.HeroArt;
     }
 
     public void SetHealth(float newHealth)
@@ -77,6 +84,7 @@ public class CardHealth : MonoBehaviour
             Name.SetText(" ");
             Skill.SetText(" ");
             Force.SetText(" ");
+            image.sprite = null;
             OnDeath?.Invoke();
             this.GetComponent<HeroCardOnCard>().Respawn();
         }

@@ -22,5 +22,6 @@ public class HeroCard : ScriptableObject
     public CardType CardType;
     public CardSkill Skill;
     public string Skill_Info;
+    public Sprite HeroArt;
 
 }

@@ -19,3 +19,4 @@ MonoBehaviour:
   CardType: 0
   Skill: {fileID: 3697352411473479587, guid: 5ac18a542708d5e4c9d0553b6fd1b657, type: 3}
   Skill_Info: Randomize the chosen number card (cost 1 mana)
+  HeroArt: {fileID: 663713604, guid: e676fcc0a07aec14d9d9e1fa3bcdfeea, type: 3}
